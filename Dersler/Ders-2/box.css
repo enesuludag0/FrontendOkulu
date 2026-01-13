@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: 62px;
+  width: 250px;
+  margin: 10px 20px 5px 15px;
+  border: 2px solid black;
+}
+
+.red {
+  background-color: red;
+  margin-left: 50px;
+  padding: 20px 0;
+}
+
+.green {
+  background-color: green;
+  margin-bottom: 50px;
+}
+
+.blue {
+  background-color: blue;
+  margin: 100px 20px 70px 40px;
+}

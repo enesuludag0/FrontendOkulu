@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  font-size: 18px;
+  color: chartreuse;
+}
+
+#menu {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.paragraf {
+  color: blue;
+}
+
+#paragraf2 {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
