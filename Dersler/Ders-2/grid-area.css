@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  height: 600px;
+  background-color: lightslategray;
+  gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "menu content content"
+    "menu . ."
+    "box1 box1 box1";
+}
+
+header {
+  background-color: lightcoral;
+  grid-area: header;
+}
+
+section {
+  background-color: lightblue;
+  grid-area: content;
+}
+
+aside {
+  background-color: lightgreen;
+  grid-area: menu;
+}
+
+.box-1 {
+  background-color: lightsalmon;
+  grid-area: box1;
+}
