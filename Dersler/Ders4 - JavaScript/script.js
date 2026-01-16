@@ -233,4 +233,155 @@ value = numbers.sort(function (a, b) {
 
 // console.log(languages);
 console.log(value);
+
+// Object
+const student = {
+  fullName: "Enes Uludağ",
+  age: 23,
+  address: {
+    country: "Türkiye",
+    city: "Ankara",
+    district: "Altındağ"
+  },
+  languages: ["Python", "Java", "C#", "JavaScript"],
+  work: function () {
+    console.log("Çalışıyor...");
+  }
+};
+
+let value;
+value = student;
+value = student.fullName;
+value = student["fullName"];
+value = student.age;
+value = student.address.city;
+value = student.languages[0];
+student.work();
+
+console.log(value);
+
+let value;
+let date = new Date();
+value = date.getDate();
+value = date.getDay();
+value = date.getFullYear();
+value = date.getHours();
+value = date.getMinutes();
+value = date.getSeconds();
+value = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
+
+console.log(value);
+
+// Koşul İfadeleri
+// if else
+let a = 30;
+let b = 20;
+
+if (a < b) {
+  console.log("a, b'den küçüktür");
+} else if (a > b) {
+  console.log("a, b'den büyüktür");
+} else {
+  console.log("a, b'ye eşittir");
+}
+
+// switch case
+let islem = "çarp";
+
+switch (islem) {
+  case "topla":
+    console.log("Toplama işlemi seçildi.");
+    break;
+  case "çıkar":
+    console.log("Çıkarma işlemi seçildi.");
+    break;
+  case "çarp":
+    console.log("Çarpma işlemi seçildi.");
+    break;
+  case "böl":
+    console.log("Bölme işlemi seçildi.");
+    break;
+  default:
+    console.log("Geçersiz işlem.");
+}
+
+// Döngüler
+// for
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    // break; // Döngüyü kırar
+    continue; // O anki adımı atlar
+  }
+  console.log(i);
+}
+
+const languages = ["Python", "Java", "C#", "JavaScript"];
+
+for (let i = 0; i < languages.length; i++) {
+  console.log(languages[i]);
+}
+
+// while
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+// do while
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+
+const languages = ["Python", "Java", "C#", "JavaScript"];
+// for in
+for (let index in languages) {
+  console.log(index, languages[index]);
+}
+
+// for of
+for (let language of languages) {
+  console.log(language);
+}
+
+// foreach
+languages.forEach((language, index) => {
+  console.log(index, language);
+});
+
+// map
+const numbers = [3, 5, 2, 10, 15, 7];
+let square = numbers.map((number) => {
+  return number * number;
+});
+console.log(square);
+
+// Fonksiyonlar
+function merhaba() {
+  console.log("Merhaba");
+}
+merhaba();
+
+function merhaba1(name) {
+  console.log(`Merhaba ${name}`);
+}
+merhaba1("Enes");
+
+function userInfo(name = "Ad belirtilmemiş", age = "Yaş belirtilmemiş") {
+  console.log(`Ad: ${name}\nYaş: ${age}`);
+}
+userInfo("Enes");
+userInfo(undefined, 23);
+userInfo("Enes", 23);
+
+function square(x) {
+  return x * x;
+}
+console.log(square(5) + 5);
+
+// Arrow Function
+const square2 = (x) => x * x;
+console.log(square2(6) + 6);
 */
